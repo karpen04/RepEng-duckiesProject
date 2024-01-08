@@ -1,0 +1,7 @@
+# Ignore PDF, AUX, LOG, OUT, BBL, and BLG files in the report folder
+/report/*.pdf
+/report/*.aux
+/report/*.log
+/report/*.out
+/report/*.bbl
+/report/*.blg
