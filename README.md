@@ -9,7 +9,8 @@ This repository contains replication package for "Duckies" Project. "Duckies" pr
     > docker build -t <image_name> .
 2. When, run a docker container
     > docker run -it <image_name>
-
+3. Alternatively, you can just execute script which bulds and runs image
+    > ./build_run_docker.sh <image_name>
 ### Docker container layout
 The docker container layout looks as: 
 ```.
@@ -41,4 +42,4 @@ The docker container layout looks as:
     > make clean
 
 ## Changes to the original repository
-For now none of these are made.
+Added .gitignore file. Added ```build_run_docker.sh``` script.
