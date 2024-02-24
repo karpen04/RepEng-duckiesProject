@@ -70,6 +70,11 @@ RUN rm -rf RepEng-DuckiesCode
 RUN chmod +x /home/duckies/scripts/smoke.sh
 RUN chmod +x /home/duckies/scripts/doAll.sh
 
+WORKDIR /home/duckies/scripts
+
+RUN ./doAll.sh
+
+WORKDIR /home/duckies
 
 # Command to run when the container starts and run smoke.sh script
-CMD ["/bin/bash", "/home/duckies/scripts/doAll.sh"]
+CMD ["/bin/bash"]

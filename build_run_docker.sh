@@ -25,7 +25,7 @@ if [ $? -eq 0 ]; then
     echo "Docker image '$image_name' built successfully."
 
 
-    docker run -it --rm "$image_name"
+    docker run -it "$image_name" /bin/bash
     echo "Docker image '$image_name' is running."
 else
     echo "Error: Docker image build failed."
