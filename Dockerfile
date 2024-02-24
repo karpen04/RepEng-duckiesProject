@@ -39,6 +39,10 @@ USER duckies
 
 # Install necessary python libraries
 RUN pip install pulp
+RUN pip install pandas
+RUN pip install xlrd
+RUN pip install pyarrow
+RUN pip install matplotlib
 
 # Set the default working directory
 WORKDIR /home/duckies
@@ -67,4 +71,5 @@ RUN rm -rf 9780596153946
 WORKDIR /home/duckies
 
 # Command to run when the container starts
-CMD ["/bin/bash"]
+CMD ["/bin/bash"]# Command to run when the container starts and run smoke.sh script
+CMD ["/bin/bash", "/home/duckies/scripts/doAll.sh"]
