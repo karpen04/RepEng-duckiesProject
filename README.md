@@ -41,7 +41,7 @@ It generates chart, which will be added to the report.
     > make clean
 
 ## Changes to the original repository
-Added .gitignore file. Added ```build_run_docker.sh``` script.
+Added .gitignore file. Added ```build_run_docker.sh``` script. Changed README file
 
 ## Used tools
 F. Peschiera J.S. Roy, Stuart A. Mitchell. 2003-2005. PuLP - LP modeler written in python. https://pypi.org/project/PuLP/
